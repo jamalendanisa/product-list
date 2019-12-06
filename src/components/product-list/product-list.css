@@ -221,29 +221,35 @@ p {
   display: inline-flex;
 }
 
+.product-header {
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 25px;
+}
 .product-list-component {
   padding: 20px 35px;
 }
 
 .product-list {
   text-align: center;
-  width: 104%;
+  width: 100%;
 }
 
 .products-container {
   box-sizing: border-box;
+  padding-top: 20px;
 }
 
 .product-box {
   position: relative;
   border-radius: 4px;
   box-shadow: 0 1px 4px 1px rgba(0,0,0,.15);
-  width: 21%;
   height: 400px;
   float: left;
   margin: 10px;
   padding: 10px;
   font-weight: bold;
+  width: 21.46%;
 }
 
 .product-img {
@@ -269,17 +275,17 @@ p {
 }
 
 .cart {
-  width: 3%;
+  width: 50px;
   position: absolute;
   right: 6%;
-  top: 190px;
+  top: 50px;
 }
 
 .cart-button[data-badge]:after {
   content:attr(data-badge);
   position:absolute;
   right: 5.5%;
-  top: 190px;
+  top: 50px;
   font-size:.7em;
   background:#f50000;
   color:white;
@@ -342,7 +348,7 @@ p {
   background-color: #fff;
   margin: 10px;
   right: 4%;
-  top: 220px;
+  top: 100px;
   padding: 10px;
   font-weight: bold;
   z-index: 2;
@@ -448,4 +454,62 @@ p {
   width: 26px;
   margin-top: 2px;
   padding: 0 10px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .product-box{
+    width: 21.46%;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 725px) {
+  .product-box{
+    width: 27%;
+  }
+  .products-on-cart{
+    width: 45%;
+  }
+
+}
+
+@media screen and (max-width: 1010px) and (min-width: 725px) {
+  .price {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 724px) and (min-width: 570px) {
+  .product-box{
+    width: 42%;
+  }
+  .products-on-cart{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .product-box{
+    width: 39%;
+  }
+  .products-on-cart{
+    width: 80%;
+  }
+  .product-header {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .product-box{
+    width: 90%;
+  }
+  .products-on-cart{
+    width: 83%;
+  }
+  .product-header {
+    font-size: 6vw;
+  }
+  .cart, .cart-button[data-badge]:after {
+    top: 70px;
+  }
 }

@@ -125,10 +125,10 @@ class ProductList extends Component {
             <p>Loading...</p>
           </div>
         </div> }
-        {!pending && !error && <div>
+        {!pending && !error && <div style={{position:'relative'}}>
           <div className="product-list-header">
             <div>
-              <h2 style={{marginBottom:'5px'}}>Showing results for "{listHeader.query}"</h2>
+              <div className="product-header">Showing results for "{listHeader.query}"</div>
               <div>Page {listHeader.page} of {listHeader.pages}</div>
               <div>Showing {products.length} of {listHeader.total}</div>
             </div>
