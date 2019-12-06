@@ -113,7 +113,7 @@ class ProductList extends Component {
 
     return (
       <div className="product-list-component">
-        <a href="https://www.catch.com.au/latitudepay">
+        <a href="http://www.catch.com.au/latitudepay">
           <img alt="banner" style={{width: '100%'}} className="banner" src="images/banner.jpg" />
         </a>
         {error && <div>

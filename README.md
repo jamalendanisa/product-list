@@ -1,3 +1,22 @@
+### Include a README file with your name and contact details which explains any coding or architecture
+### decisions you made, along with instructions to bootstrap and run your program.
+
+Hello, I'm Anisa Jamalenda, you could contact me to anisa.jamalenda@gmail.com.
+I would like to apologize for the delay and for giving my task after the deadline.
+Hereby my explanation about this assessment.
+
+I build this assessment with Create React App for it to be easier and faster building. I use Redux Saga and Axios as
+middleware and API caller because it would be easier to manage and more efficient to execute asynchronous actions like fetching data from API. 
+
+I try to make the UI as close as the given design while looking Catch's website as referrences and adding the rest using my imagination. I have done the responsive UI application too so it could open nicely and works on mobile, tablet and desktop screen sizes. Also done the test but I apologize for not at full coverage since i just learn the Jest and Enzyme for quite sometime but of course would love to learn in more. I handle the CORS with adding 'https://cors-anywhere.herokuapp.com/' on the API URL, it's an 'easy' fix for now. Because CORS should be allowed in backend after all, that's what i know for now after researching the internet. Still will learn some more. I received cookie warning when i attached Catch's url link but I leave it for now. Would try to fix it in the future.
+
+I think that is from me for now. Thank you very much for the opportunity. Hope i could pass to the next step and be a part of your team.
+
+Have a nice day.
+
+Anisa Jamalenda
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -7,62 +26,16 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

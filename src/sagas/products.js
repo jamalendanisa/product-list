@@ -3,7 +3,7 @@ import { getProducts } from "../actions";
 import axios from 'axios';
 
 export function getProductsAPI(payload) {
-    const url = 'http://catch-code-challenge.s3-website-ap-southeast-2.amazonaws.com/challenge-3/response.json';
+    const url = 'https://cors-anywhere.herokuapp.com/http://catch-code-challenge.s3-website-ap-southeast-2.amazonaws.com/challenge-3/response.json';
     const config = {
     headers: {
         'Content-Type': 'application/json', 

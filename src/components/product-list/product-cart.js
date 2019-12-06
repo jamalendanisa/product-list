@@ -46,7 +46,7 @@ export default class Products extends Component {
                 <img alt="product-img" className="product-img-cart" src={product.imageUrl} />
                 <div className="product-name-cart">
                   <div>{product.name}</div>
-                  <div>Qty: {product.qty}</div>
+                  <div className="product-qty">Qty: {product.qty}</div>
                   <div className="price-cart">{salePrice}</div>
                   <div className="qty-icon-container">
                   <div className="add-qty" onClick={()=>this.addQty(product)}>
