@@ -34,11 +34,12 @@ class ProductList extends Component {
   addToCart = (product) => {
     let duplicate = false;
     let totalPrice = product.salePrice / 100;
-    this.state.cart.find((c) => {   
+
+    this.state.cart.forEach(function (c) {
       if(product.id === c.id){
         duplicate = true;
       }
-    }); 
+    });
 
     if (duplicate){
       this.setState(prevState => ({ 
@@ -77,6 +78,10 @@ class ProductList extends Component {
         totalPrice: prevState.totalPrice - totalPrice,
         qty: prevState.qty - 1
     }));
+
+    if (product.qty === 1 ){
+      this.removeFromCart(product);
+    }
   }
        
   emptyCart = () => this.setState({ cart: [], qty: 0, totalPrice: 0 });
@@ -85,14 +90,14 @@ class ProductList extends Component {
     let duplicate = false;
     let index, qty, totalPrice;
 
-    this.state.cart.find((c,i) => {   
+    this.state.cart.forEach(function (c, i) {
       if (product.id === c.id){
         duplicate = true;
-            index = i;
-            qty = c.qty;
-            totalPrice = c.salePrice / 100; 
+        index = i;
+        qty = c.qty;
+        totalPrice = c.salePrice / 100; 
       }
-    }); 
+    });
 
     if(duplicate){
         this.state.cart.splice(index, 1);
@@ -127,8 +132,8 @@ class ProductList extends Component {
               <div>Page {listHeader.page} of {listHeader.pages}</div>
               <div>Showing {products.length} of {listHeader.total}</div>
             </div>
-            <div className="cart-button" onClick={()=>this.showCart()} data-badge={this.state.qty}>
-              <img alt="cart" className="cart" src="images/cart.svg" /> 
+            <div className="cart-button" data-badge={this.state.qty}>
+              <img onClick={()=>this.showCart()} alt="cart" className="cart" src="images/cart.svg" /> 
               <div className="cart-list">{this.state.showCart && 
                 <ProductsCart 
                   products={products} 
