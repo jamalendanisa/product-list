@@ -17,7 +17,7 @@ export function getProductsAPI(payload) {
 export function* getProductsRequest(action) {
   try {
     const response = yield call(getProductsAPI, action.payload);
-    console.log(response)
+
     if (response) {
       yield put(
         getProducts.success({
