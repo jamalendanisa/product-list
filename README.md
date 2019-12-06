@@ -1,7 +1,6 @@
-### Include a README file with your name and contact details which explains any coding or architecture
-### decisions you made, along with instructions to bootstrap and run your program.
+### Hello, I'm Anisa Jamalenda,
+you could contact me to anisa.jamalenda@gmail.com.
 
-Hello, I'm Anisa Jamalenda, you could contact me to anisa.jamalenda@gmail.com.
 I would like to apologize for the delay and for giving my task after the deadline.
 Hereby my explanation about this assessment.
 
